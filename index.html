@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/probikeshop.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai-sublime.css">
+		<style type="text/css">
+			img.fragment.current-visible.visible:not(.current-fragment),
+			pre.fragment.current-visible.visible:not(.current-fragment) {
+				display: none;
+			}
+			.print-pdf iframe {
+				display: none;
+			}
+			.print-pdf .reveal pre code {
+				max-height: inherit;
+				white-space: pre-wrap;
+			}
+			.print-pdf .reveal aside.notes {
+				display: block;
+				page-break-inside: avoid;
+				page-break-before: always;
+				page-break-after: always;
+			}
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="slides.md"  
+						 data-separator="^\n---\n"  
+						 data-separator-vertical="^\n--\n"  
+						 data-separator-notes="^Note:"  
+						 data-charset="utf-8">
+				</section>
+				<section><h1>Des questions ?</h1></section>
+				<section><h1>Merci</h1></section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			// Flags if speaker notes should be visible to all viewers
+			Reveal.initialize({
+				showNotes: false,
+				// Vertical centering of slides
+				center: false,
+				// Push each slide change to the browser history
+				history: true,
+				// Display the page number of the current slide
+				slideNumber: true,
+				// Global override for autolaying embedded media (video/audio/iframe)
+				// - null: Media will only autoplay if data-autoplay is present
+				// - true: All media will autoplay, regardless of individual setting
+				// - false: No media will autoplay, regardless of individual setting
+				autoPlayMedia: false,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

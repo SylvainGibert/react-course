@@ -1,0 +1,75 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Source Sans Pro', sans-serif;
+$mainColor: #3b3737;
+$headingFont: 'Roboto', sans-serif;
+$headingColor: #0a0a0a;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #f6f6f6;
+$linkColor: #009ddf;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+$heading1Size: 2.77em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal h1:last-child:before {
+    content: url('/images/logo.svg');
+    display: block;
+}
+
+.reveal.slide.ready:before {
+    content: url('/images/logo-square.svg');
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    width: 80px;
+}
+
+.reveal .slides section:after {
+    content: attr(data-title);
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 0.4em;
+}
+
+.reveal .slides section .fragment.current-visible-only {
+    height: 0;
+    padding: 0;
+    margin: 0 auto;
+}

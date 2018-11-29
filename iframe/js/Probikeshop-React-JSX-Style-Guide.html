@@ -1,0 +1,1538 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>~Airbnb~ Probikeshop React/JSX Style Guide</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-airbnb-probikeshop-reactjsx-style-guide" class="anchor" href="#airbnb-probikeshop-reactjsx-style-guide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><del>Airbnb</del> Probikeshop React/JSX Style Guide</h1>
+<p><em>A mostly reasonable approach to React and JSX</em>
+<strong>"fork" de <a href="https://github.com/airbnb/javascript/tree/8cf2c70a/react">https://github.com/airbnb/javascript/tree/8cf2c70a/react</a></strong></p>
+<h2>
+<a id="user-content-table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of Contents</h2>
+<ol>
+<li><a href="#basic-rules">Basic Rules</a></li>
+<li><a href="#class-vs-reactcreateclass-vs-stateless">Class vs <code>React.createClass</code> vs stateless</a></li>
+<li><a href="#mixins">Mixins</a></li>
+<li><a href="#naming">Naming</a></li>
+<li><a href="#declaration">Declaration</a></li>
+<li><a href="#alignment">Alignment</a></li>
+<li><a href="#quotes">Quotes</a></li>
+<li><a href="#spacing">Spacing</a></li>
+<li><a href="#props">Props</a></li>
+<li><a href="#refs">Refs</a></li>
+<li><a href="#parentheses">Parentheses</a></li>
+<li><a href="#tags">Tags</a></li>
+<li><a href="#methods">Methods</a></li>
+<li><a href="#ordering">Ordering</a></li>
+<li><a href="#ismounted"><code>isMounted</code></a></li>
+</ol>
+<h2>
+<a id="user-content-basic-rules" class="anchor" href="#basic-rules" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Basic Rules</h2>
+<ul>
+<li>Only include one React component per file.
+<ul>
+<li>However, multiple <a href="https://facebook.github.io/react/docs/reusable-components.html#stateless-functions" rel="nofollow">Stateless, or Pure, Components</a> are allowed per file. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md#ignorestateless"><code>react/no-multi-comp</code></a>.</li>
+</ul>
+</li>
+<li>Always use JSX syntax.</li>
+<li>Do not use <code>React.createElement</code> unless you're initializing the app from a file that is not JSX.</li>
+</ul>
+<h2>
+<a id="user-content-class-vs-reactcreateclass-vs-stateless" class="anchor" href="#class-vs-reactcreateclass-vs-stateless" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Class vs <code>React.createClass</code> vs stateless</h2>
+<ul>
+<li>
+<p>If you have internal state and/or refs, prefer <code>class extends React.Component</code> over <code>React.createClass</code>. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md"><code>react/prefer-es6-class</code></a> <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md"><code>react/prefer-stateless-function</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">const</span> <span class="pl-smi">Listing</span><span class="pl-k"> =</span> <span class="pl-smi">React</span><span class="pl-k">.</span><span class="pl-en">createClass</span>({
+<span class="pl-c">  <span class="pl-c">//</span> ...</span>
+  <span class="pl-en">render</span>() {
+<span class="pl-k">    return</span> &lt;<span class="pl-ent">div</span>&gt;<span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">state</span><span class="pl-k">.</span><span class="pl-smi">hello</span></span><span class="pl-pse">}</span>&lt;/<span class="pl-ent">div</span>&gt;;
+  }
+});
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">class</span> <span class="pl-en">Listing</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+<span class="pl-c">  <span class="pl-c">//</span> ...</span>
+  <span class="pl-en">render</span>() {
+<span class="pl-k">    return</span> &lt;<span class="pl-ent">div</span>&gt;<span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">state</span><span class="pl-k">.</span><span class="pl-smi">hello</span></span><span class="pl-pse">}</span>&lt;/<span class="pl-ent">div</span>&gt;;
+  }
+}</pre></div>
+<p>And if you don't have state or refs, prefer normal functions (not arrow functions) over classes:</p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">class</span> <span class="pl-en">Listing</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+  <span class="pl-en">render</span>() {
+<span class="pl-k">    return</span> &lt;<span class="pl-ent">div</span>&gt;<span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">props</span><span class="pl-k">.</span><span class="pl-smi">hello</span></span><span class="pl-pse">}</span>&lt;/<span class="pl-ent">div</span>&gt;;
+  }
+}
+
+<span class="pl-c"><span class="pl-c">//</span> bad (relying on function name inference is discouraged)</span>
+<span class="pl-k">const</span> <span class="pl-smi">Listing</span><span class="pl-k"> =</span> ({<span class="pl-smi"> hello</span> }) <span class="pl-k">=&gt;</span> (
+  &lt;<span class="pl-ent">div</span>&gt;<span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">hello</span></span><span class="pl-pse">}</span>&lt;/<span class="pl-ent">div</span>&gt;
+);
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">function</span> <span class="pl-en">Listing</span>({<span class="pl-smi"> hello</span> }) {
+<span class="pl-k">  return</span> &lt;<span class="pl-ent">div</span>&gt;<span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">hello</span></span><span class="pl-pse">}</span>&lt;/<span class="pl-ent">div</span>&gt;;
+}</pre></div>
+</li>
+</ul>
+<h2>
+<a id="user-content-mixins" class="anchor" href="#mixins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mixins</h2>
+<ul>
+<li>
+<a href="https://facebook.github.io/react/blog/2016/07/13/mixins-considered-harmful.html" rel="nofollow">Do not use mixins</a>.</li>
+</ul>
+<blockquote>
+<p>Why? Mixins introduce implicit dependencies, cause name clashes, and cause snowballing complexity. Most use cases for mixins can be accomplished in better ways via components, higher-order components, or utility modules.</p>
+</blockquote>
+<h2>
+<a id="user-content-naming" class="anchor" href="#naming" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Naming</h2>
+<ul>
+<li>
+<p><strong>Extensions</strong>: Use <code>.jsx</code> extension for React components.</p>
+</li>
+<li>
+<p><strong>Filename</strong>: Use PascalCase for filenames. E.g., <code>ReservationCard.jsx</code>.</p>
+</li>
+<li>
+<p><strong>Reference Naming</strong>: Use PascalCase for React components and camelCase for their instances. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md"><code>react/jsx-pascal-case</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">import</span><span class="pl-smi"> reservationCard</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>./ReservationCard<span class="pl-pds">'</span></span>;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">import</span><span class="pl-smi"> ReservationCard</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>./ReservationCard<span class="pl-pds">'</span></span>;
+
+<span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">const</span> <span class="pl-smi">ReservationItem</span><span class="pl-k"> =</span> &lt;<span class="pl-ent"><span class="pl-c1">ReservationCard</span></span> /&gt;;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">const</span> <span class="pl-smi">reservationItem</span><span class="pl-k"> =</span> &lt;<span class="pl-ent"><span class="pl-c1">ReservationCard</span></span> /&gt;;</pre></div>
+</li>
+<li>
+<p><strong>Component Naming</strong>: Use the filename as the component name. For example, <code>ReservationCard.jsx</code> should have a reference name of <code>ReservationCard</code>. However, for root components of a directory, use <code>index.jsx</code> as the filename and use the directory name as the component name:</p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">import</span><span class="pl-smi"> Footer</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>./Footer/Footer<span class="pl-pds">'</span></span>;
+
+<span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">import</span><span class="pl-smi"> Footer</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>./Footer/index<span class="pl-pds">'</span></span>;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">import</span><span class="pl-smi"> Footer</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>./Footer<span class="pl-pds">'</span></span>;</pre></div>
+</li>
+<li>
+<p><strong>Higher-order Component Naming</strong>: Use a composite of the higher-order component's name and the passed-in component's name as the <code>displayName</code> on the generated component. For example, the higher-order component <code>withFoo()</code>, when passed a component <code>Bar</code> should produce a component with a <code>displayName</code> of <code>withFoo(Bar)</code>.</p>
+<blockquote>
+<p>Why? A component's <code>displayName</code> may be used by developer tools or in error messages, and having a value that clearly expresses this relationship helps people understand what is happening.</p>
+</blockquote>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">export default</span> <span class="pl-k">function</span> <span class="pl-en">withFoo</span>(<span class="pl-smi">WrappedComponent</span>) {
+<span class="pl-k">  return</span> <span class="pl-k">function</span> <span class="pl-en">WithFoo</span>(<span class="pl-smi">props</span>) {
+<span class="pl-k">    return</span> &lt;<span class="pl-ent"><span class="pl-c1">WrappedComponent</span></span> <span class="pl-pse">{</span><span class="pl-s1"><span class="pl-k">...</span><span class="pl-smi">props</span></span><span class="pl-pse">}</span> <span class="pl-e">foo</span> /&gt;;
+  }
+}
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">export default</span> <span class="pl-k">function</span> <span class="pl-en">withFoo</span>(<span class="pl-smi">WrappedComponent</span>) {
+  <span class="pl-k">function</span> <span class="pl-en">WithFoo</span>(<span class="pl-smi">props</span>) {
+<span class="pl-k">    return</span> &lt;<span class="pl-ent"><span class="pl-c1">WrappedComponent</span></span> <span class="pl-pse">{</span><span class="pl-s1"><span class="pl-k">...</span><span class="pl-smi">props</span></span><span class="pl-pse">}</span> <span class="pl-e">foo</span> /&gt;;
+  }
+
+  <span class="pl-k">const</span> <span class="pl-smi">wrappedComponentName</span><span class="pl-k"> =</span> <span class="pl-smi">WrappedComponent</span><span class="pl-k">.</span><span class="pl-smi">displayName</span>
+<span class="pl-k">    ||</span> <span class="pl-smi">WrappedComponent</span><span class="pl-k">.</span><span class="pl-smi">name</span>
+<span class="pl-k">    ||</span> <span class="pl-s"><span class="pl-pds">'</span>Component<span class="pl-pds">'</span></span>;
+
+  <span class="pl-smi">WithFoo</span><span class="pl-k">.</span><span class="pl-smi">displayName</span><span class="pl-k"> =</span><span class="pl-s"> <span class="pl-s">`</span><span class="pl-s">withFoo(<span class="pl-e">${<span class="pl-smi">wrappedComponentName</span>}</span>)</span><span class="pl-s">`</span></span>;
+<span class="pl-k">  return</span><span class="pl-smi"> WithFoo</span>;
+}</pre></div>
+</li>
+<li>
+<p><strong>Props Naming</strong>: Avoid using DOM component prop names for different purposes.</p>
+<blockquote>
+<p>Why? People expect props like <code>style</code> and <code>className</code> to mean one specific thing. Varying this API for a subset of your app makes the code less readable and less maintainable, and may cause bugs.</p>
+</blockquote>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">MyComponent</span></span> <span class="pl-e">style</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>fancy<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">MyComponent</span></span> <span class="pl-e">className</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>fancy<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">MyComponent</span></span> <span class="pl-e">variant</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>fancy<span class="pl-pds">"</span></span> /&gt;</pre></div>
+</li>
+<li>
+<p><strong>Écouteurs d'événement</strong>: remplacer simplemen <code>on</code> par <code>handle</code>, s'il y a plusieurs écouteurs d'événement du même type suffixer <code>handle</code> par le nom, ou la classe, de l'élément.</p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">class</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+
+  <span class="pl-smi">onClickDiv</span><span class="pl-k"> =</span> () <span class="pl-k">=&gt;</span> {
+<span class="pl-c">    <span class="pl-c">//</span> do stuff</span>
+  }
+
+  <span class="pl-en">render</span>() {
+<span class="pl-k">    return</span> &lt;<span class="pl-ent">div</span> <span class="pl-e">onClick</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">onClickDiv</span></span><span class="pl-pse">}</span> /&gt;;
+  }
+}
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">class</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+
+  <span class="pl-smi">handleClick</span><span class="pl-k"> =</span> () <span class="pl-k">=&gt;</span> {
+<span class="pl-c">    <span class="pl-c">//</span> do stuff</span>
+  }
+
+  <span class="pl-en">render</span>() {
+<span class="pl-k">    return</span> &lt;<span class="pl-ent">div</span> <span class="pl-e">onClick</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">handleClick</span></span><span class="pl-pse">}</span> /&gt;;
+  }
+}</pre></div>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">class</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+
+  <span class="pl-smi">onClickButton</span><span class="pl-k"> =</span> () <span class="pl-k">=&gt;</span> {
+<span class="pl-c">    <span class="pl-c">//</span> do stuff</span>
+  }
+
+<span class="pl-smi">  onClickSecondButton</span><span class="pl-k"> =</span> () <span class="pl-k">=&gt;</span> {
+<span class="pl-c">    <span class="pl-c">//</span> do stuff</span>
+  }
+
+  <span class="pl-en">render</span>() {
+<span class="pl-k">    return</span> (
+        &lt;<span class="pl-ent">div</span>&gt;
+            &lt;<span class="pl-ent">button</span> <span class="pl-e">onClick</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">onClickButton</span></span><span class="pl-pse">}</span> type<span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-e">className</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>btn btn-danger<span class="pl-pds">"</span></span>&gt;cancel&lt;/<span class="pl-ent">button</span>&gt;
+            &lt;<span class="pl-ent">button</span> <span class="pl-e">onClick</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">onClickSecondButton</span></span><span class="pl-pse">}</span> type<span class="pl-s"><span class="pl-pds">"</span>submit<span class="pl-pds">"</span></span>&gt;save&lt;/<span class="pl-ent">button</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+    );
+  }
+}
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">class</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+
+  <span class="pl-smi">handleCancelButtonClick</span><span class="pl-k"> =</span> () <span class="pl-k">=&gt;</span> {
+<span class="pl-c">    <span class="pl-c">//</span> do stuff</span>
+  }
+
+<span class="pl-smi">  handleSubmitButtonClick</span><span class="pl-k"> =</span> () <span class="pl-k">=&gt;</span> {
+<span class="pl-c">    <span class="pl-c">//</span> do stuff</span>
+  }
+
+  <span class="pl-en">render</span>() {
+<span class="pl-k">    return</span> (
+        &lt;<span class="pl-ent">div</span>&gt;
+            &lt;<span class="pl-ent">button</span> <span class="pl-e">onClick</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">handleCancelButtonClick</span></span><span class="pl-pse">}</span> type<span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> <span class="pl-e">className</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>btn -<span class="pl-pds">"</span></span>&gt;cancel&lt;/<span class="pl-ent">button</span>&gt;
+            &lt;<span class="pl-ent">button</span> <span class="pl-e">onClick</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">handleSubmitButtonClick</span></span><span class="pl-pse">}</span> type<span class="pl-s"><span class="pl-pds">"</span>submit<span class="pl-pds">"</span></span>&gt;save&lt;/<span class="pl-ent">button</span>&gt;
+        &lt;/<span class="pl-ent">div</span>&gt;
+    );
+  }
+}</pre></div>
+</li>
+</ul>
+<h2>
+<a id="user-content-declaration" class="anchor" href="#declaration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Declaration</h2>
+<ul>
+<li>
+<p>Do not use <code>displayName</code> for naming components. Instead, name the component by reference.</p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">export default</span> <span class="pl-smi">React</span><span class="pl-k">.</span><span class="pl-en">createClass</span>({
+<span class="pl-c1">  <span class="pl-s">displayName</span>:</span> <span class="pl-s"><span class="pl-pds">'</span>ReservationCard<span class="pl-pds">'</span></span>,
+<span class="pl-c">  <span class="pl-c">//</span> stuff goes here</span>
+});
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">export default</span> <span class="pl-k">class</span> <span class="pl-en">ReservationCard</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+}</pre></div>
+</li>
+</ul>
+<h2>
+<a id="user-content-alignment" class="anchor" href="#alignment" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alignment</h2>
+<ul>
+<li>
+<p>Follow these alignment styles for JSX syntax. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md"><code>react/jsx-closing-bracket-location</code></a> <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md"><code>react/jsx-closing-tag-location</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">superLongParam</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>
+     <span class="pl-e">anotherSuperLongParam</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>baz<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+  <span class="pl-e">superLongParam</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>
+  <span class="pl-e">anotherSuperLongParam</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>baz<span class="pl-pds">"</span></span>
+/&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> if props fit in one line then keep it on the same line</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">bar</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> children get indented normally</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+  <span class="pl-e">superLongParam</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>
+  <span class="pl-e">anotherSuperLongParam</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>baz<span class="pl-pds">"</span></span>
+&gt;
+  &lt;<span class="pl-ent"><span class="pl-c1">Quux</span></span> /&gt;
+&lt;/<span class="pl-ent"><span class="pl-c1">Foo</span></span>&gt;</pre></div>
+</li>
+</ul>
+<h2>
+<a id="user-content-quotes" class="anchor" href="#quotes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quotes</h2>
+<ul>
+<li>
+<p>Always use double quotes (<code>"</code>) for JSX attributes, but single quotes (<code>'</code>) for all other JS. eslint: <a href="https://eslint.org/docs/rules/jsx-quotes" rel="nofollow"><code>jsx-quotes</code></a></p>
+<blockquote>
+<p>Why? Regular HTML attributes also typically use double quotes instead of single, so JSX attributes mirror this convention.</p>
+</blockquote>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">bar</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>bar<span class="pl-pds">'</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">bar</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">style</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1">{<span class="pl-c1"> <span class="pl-s">left</span>:</span> <span class="pl-s"><span class="pl-pds">"</span>20px<span class="pl-pds">"</span></span> }</span><span class="pl-pse">}</span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">style</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1">{<span class="pl-c1"> <span class="pl-s">left</span>:</span> <span class="pl-s"><span class="pl-pds">'</span>20px<span class="pl-pds">'</span></span> }</span><span class="pl-pse">}</span> /&gt;</pre></div>
+</li>
+</ul>
+<h2>
+<a id="user-content-spacing" class="anchor" href="#spacing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Spacing</h2>
+<ul>
+<li>
+<p>Always include a single space in your self-closing tag. eslint: <a href="https://eslint.org/docs/rules/no-multi-spaces" rel="nofollow"><code>no-multi-spaces</code></a>, <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md"><code>react/jsx-tag-spacing</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>/&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> very bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>                 /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+ /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> /&gt;</pre></div>
+</li>
+<li>
+<p>Do not pad JSX curly braces with spaces. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md"><code>react/jsx-curly-spacing</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">bar</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi"> baz</span> </span><span class="pl-pse">}</span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">bar</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">baz</span></span><span class="pl-pse">}</span> /&gt;</pre></div>
+</li>
+</ul>
+<h2>
+<a id="user-content-props" class="anchor" href="#props" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Props</h2>
+<ul>
+<li>
+<p>Always use camelCase for prop names.</p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+  <span class="pl-e">UserName</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hello<span class="pl-pds">"</span></span>
+  <span class="pl-e">phone_number</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">12345678</span></span><span class="pl-pse">}</span>
+/&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+  <span class="pl-e">userName</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hello<span class="pl-pds">"</span></span>
+  <span class="pl-e">phoneNumber</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">12345678</span></span><span class="pl-pse">}</span>
+/&gt;</pre></div>
+</li>
+<li>
+<p>Omit the value of the prop when it is explicitly <code>true</code>. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md"><code>react/jsx-boolean-value</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+  <span class="pl-e">hidden</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">true</span></span><span class="pl-pse">}</span>
+/&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+  <span class="pl-e">hidden</span>
+/&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">hidden</span> /&gt;</pre></div>
+</li>
+<li>
+<p>Always include an <code>alt</code> prop on <code>&lt;img&gt;</code> tags. If the image is presentational, <code>alt</code> can be an empty string or the <code>&lt;img&gt;</code> must have <code>role="presentation"</code>. eslint: <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md"><code>jsx-a11y/alt-text</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hello.jpg<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hello.jpg<span class="pl-pds">"</span></span> <span class="pl-e">alt</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Me waving hello<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hello.jpg<span class="pl-pds">"</span></span> <span class="pl-e">alt</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hello.jpg<span class="pl-pds">"</span></span> <span class="pl-e">role</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>presentation<span class="pl-pds">"</span></span> /&gt;</pre></div>
+</li>
+<li>
+<p>Do not use words like "image", "photo", or "picture" in <code>&lt;img&gt;</code> <code>alt</code> props. eslint: <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md"><code>jsx-a11y/img-redundant-alt</code></a></p>
+<blockquote>
+<p>Why? Screenreaders already announce <code>img</code> elements as images, so there is no need to include this information in the alt text.</p>
+</blockquote>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hello.jpg<span class="pl-pds">"</span></span> <span class="pl-e">alt</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Picture of me waving hello<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent">img</span> <span class="pl-e">src</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hello.jpg<span class="pl-pds">"</span></span> <span class="pl-e">alt</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>Me waving hello<span class="pl-pds">"</span></span> /&gt;</pre></div>
+</li>
+<li>
+<p>Use only valid, non-abstract <a href="https://www.w3.org/TR/wai-aria/roles#role_definitions" rel="nofollow">ARIA roles</a>. eslint: <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md"><code>jsx-a11y/aria-role</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad - not an ARIA role</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">role</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>datepicker<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> bad - abstract ARIA role</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">role</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>range<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">role</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>button<span class="pl-pds">"</span></span> /&gt;</pre></div>
+</li>
+<li>
+<p>Do not use <code>accessKey</code> on elements. eslint: <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md"><code>jsx-a11y/no-access-key</code></a></p>
+</li>
+</ul>
+<blockquote>
+<p>Why? Inconsistencies between keyboard shortcuts and keyboard commands used by people using screenreaders and keyboards complicate accessibility.</p>
+</blockquote>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">accessKey</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>h<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent">div</span> /&gt;</pre></div>
+<ul>
+<li>Avoid using an array index as <code>key</code> prop, prefer a unique ID. (<a href="https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318" rel="nofollow">why?</a>)</li>
+</ul>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+{<span class="pl-smi">todos</span><span class="pl-k">.</span><span class="pl-en">map</span>((<span class="pl-smi">todo</span>,<span class="pl-smi"> index</span>) <span class="pl-k">=&gt;</span>
+  &lt;<span class="pl-ent"><span class="pl-c1">Todo</span></span>
+    <span class="pl-pse">{</span><span class="pl-s1"><span class="pl-k">...</span><span class="pl-smi">todo</span></span><span class="pl-pse">}</span>
+    <span class="pl-e">key</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">index</span></span><span class="pl-pse">}</span>
+  /&gt;
+)}
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+{<span class="pl-smi">todos</span><span class="pl-k">.</span><span class="pl-en">map</span>(<span class="pl-smi">todo</span> <span class="pl-k">=&gt;</span> (
+  &lt;<span class="pl-ent"><span class="pl-c1">Todo</span></span>
+    <span class="pl-pse">{</span><span class="pl-s1"><span class="pl-k">...</span><span class="pl-smi">todo</span></span><span class="pl-pse">}</span>
+    <span class="pl-e">key</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">todo</span><span class="pl-k">.</span><span class="pl-smi">id</span></span><span class="pl-pse">}</span>
+  /&gt;
+))}</pre></div>
+<ul>
+<li>Always define explicit defaultProps for all non-required props.</li>
+</ul>
+<blockquote>
+<p>Why? propTypes are a form of documentation, and providing defaultProps means the reader of your code doesn’t have to assume as much. In addition, it can mean that your code can omit certain type checks.</p>
+</blockquote>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">function</span> <span class="pl-en">SFC</span>({<span class="pl-smi"> foo</span>,<span class="pl-smi"> bar</span>,<span class="pl-smi"> children</span> }) {
+<span class="pl-k">  return</span> &lt;<span class="pl-ent">div</span>&gt;<span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">foo</span></span><span class="pl-pse">}</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">bar</span></span><span class="pl-pse">}</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">children</span></span><span class="pl-pse">}</span>&lt;/<span class="pl-ent">div</span>&gt;;
+}
+<span class="pl-c1">SFC</span><span class="pl-k">.</span><span class="pl-smi">propTypes</span> <span class="pl-k">=</span> {
+<span class="pl-c1">  <span class="pl-s">foo</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">number</span><span class="pl-k">.</span><span class="pl-smi">isRequired</span>,
+<span class="pl-c1">  <span class="pl-s">bar</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">string</span>,
+<span class="pl-c1">  <span class="pl-s">children</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">node</span>,
+};
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">function</span> <span class="pl-en">SFC</span>({<span class="pl-smi"> foo</span>,<span class="pl-smi"> bar</span>,<span class="pl-smi"> children</span> }) {
+<span class="pl-k">  return</span> &lt;<span class="pl-ent">div</span>&gt;<span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">foo</span></span><span class="pl-pse">}</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">bar</span></span><span class="pl-pse">}</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">children</span></span><span class="pl-pse">}</span>&lt;/<span class="pl-ent">div</span>&gt;;
+}
+<span class="pl-c1">SFC</span><span class="pl-k">.</span><span class="pl-smi">propTypes</span> <span class="pl-k">=</span> {
+<span class="pl-c1">  <span class="pl-s">foo</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">number</span><span class="pl-k">.</span><span class="pl-smi">isRequired</span>,
+<span class="pl-c1">  <span class="pl-s">bar</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">string</span>,
+<span class="pl-c1">  <span class="pl-s">children</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">node</span>,
+};
+<span class="pl-c1">SFC</span><span class="pl-k">.</span><span class="pl-smi">defaultProps</span> <span class="pl-k">=</span> {
+<span class="pl-c1">  <span class="pl-s">bar</span>:</span> <span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>,
+<span class="pl-c1">  <span class="pl-s">children</span>:</span><span class="pl-c1"> null</span>,
+};</pre></div>
+<ul>
+<li>Use spread props sparingly.</li>
+</ul>
+<blockquote>
+<p>Why? Otherwise you're more likely to pass unnecessary props down to components. And for React v15.6.1 and older, you could <a href="https://reactjs.org/blog/2017/09/08/dom-attributes-in-react-16.html" rel="nofollow">pass invalid HTML attributes to the DOM</a>.</p>
+</blockquote>
+<p>Exceptions:</p>
+<ul>
+<li>HOCs that proxy down props and hoist propTypes</li>
+</ul>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-k">function</span> <span class="pl-en">HOC</span>(<span class="pl-smi">WrappedComponent</span>) {
+<span class="pl-k">  return</span> <span class="pl-k">class</span> <span class="pl-en">Proxy</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+    <span class="pl-c1">Proxy</span><span class="pl-k">.</span><span class="pl-smi">propTypes</span> <span class="pl-k">=</span> {
+<span class="pl-c1">      <span class="pl-s">text</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">string</span>,
+<span class="pl-c1">      <span class="pl-s">isLoading</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">bool</span>
+    };
+
+    <span class="pl-en">render</span>() {
+<span class="pl-k">      return</span> &lt;<span class="pl-ent"><span class="pl-c1">WrappedComponent</span></span> <span class="pl-pse">{</span><span class="pl-s1"><span class="pl-k">...</span><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">props</span></span><span class="pl-pse">}</span> /&gt;
+    }
+  }
+}</pre></div>
+<ul>
+<li>Spreading objects with known, explicit props. This can be particularly useful when testing React components with Mocha's beforeEach construct.</li>
+</ul>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-k">export default</span><span class="pl-smi"> function Foo</span> {
+  <span class="pl-k">const</span> <span class="pl-smi">props</span> <span class="pl-k">=</span> {
+<span class="pl-c1">    <span class="pl-s">text</span>:</span> <span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>,
+<span class="pl-c1">    <span class="pl-s">isPublished</span>:</span><span class="pl-c1"> false</span>
+  }
+
+  <span class="pl-k">return</span> (&lt;<span class="pl-ent">div</span> <span class="pl-pse">{</span><span class="pl-s1"><span class="pl-k">...</span><span class="pl-smi">props</span></span><span class="pl-pse">}</span> /&gt;);
+}</pre></div>
+<p>Notes for use:
+Filter out unnecessary props when possible. Also, use <a href="https://www.npmjs.com/package/prop-types-exact" rel="nofollow">prop-types-exact</a> to help prevent bugs.</p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span>good</span>
+<span class="pl-en">render</span>() {
+  <span class="pl-k">const</span> {<span class="pl-smi"> irrelevantProp</span>,<span class="pl-k"> ...</span><span class="pl-smi">relevantProps</span>  } <span class="pl-k">=</span><span class="pl-c1"> this</span><span class="pl-k">.</span><span class="pl-smi">props</span>;
+<span class="pl-k">  return</span> &lt;<span class="pl-ent"><span class="pl-c1">WrappedComponent</span></span> <span class="pl-pse">{</span><span class="pl-s1"><span class="pl-k">...</span><span class="pl-smi">relevantProps</span></span><span class="pl-pse">}</span> /&gt;
+}
+
+<span class="pl-c"><span class="pl-c">//</span>bad</span>
+<span class="pl-en">render</span>() {
+  <span class="pl-k">const</span> {<span class="pl-smi"> irrelevantProp</span>,<span class="pl-k"> ...</span><span class="pl-smi">relevantProps</span>  } <span class="pl-k">=</span><span class="pl-c1"> this</span><span class="pl-k">.</span><span class="pl-smi">props</span>;
+<span class="pl-k">  return</span> &lt;<span class="pl-ent"><span class="pl-c1">WrappedComponent</span></span> <span class="pl-pse">{</span><span class="pl-s1"><span class="pl-k">...</span><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">props</span></span><span class="pl-pse">}</span> /&gt;
+}</pre></div>
+<h2>
+<a id="user-content-refs" class="anchor" href="#refs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Refs</h2>
+<ul>
+<li>
+<p>Always use ref callbacks. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md"><code>react/no-string-refs</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+  <span class="pl-e">ref</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>myRef<span class="pl-pds">"</span></span>
+/&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+  <span class="pl-e">ref</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1">(<span class="pl-smi">ref</span>) <span class="pl-k">=&gt;</span> {<span class="pl-c1"> this</span><span class="pl-k">.</span><span class="pl-smi">myRef</span><span class="pl-k"> =</span><span class="pl-smi"> ref</span>; }</span><span class="pl-pse">}</span>
+/&gt;</pre></div>
+</li>
+</ul>
+<h2>
+<a id="user-content-parentheses" class="anchor" href="#parentheses" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parentheses</h2>
+<ul>
+<li>
+<p>Wrap JSX tags in parentheses when they span more than one line. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md"><code>react/jsx-wrap-multilines</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-en">render</span>() {
+<span class="pl-k">  return</span> &lt;<span class="pl-ent"><span class="pl-c1">MyComponent</span></span> <span class="pl-e">variant</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>long body<span class="pl-pds">"</span></span> <span class="pl-e">foo</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>&gt;
+           &lt;<span class="pl-ent"><span class="pl-c1">MyChild</span></span> /&gt;
+         &lt;/<span class="pl-ent"><span class="pl-c1">MyComponent</span></span>&gt;;
+}
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-en">render</span>() {
+<span class="pl-k">  return</span> (
+    &lt;<span class="pl-ent"><span class="pl-c1">MyComponent</span></span> <span class="pl-e">variant</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>long body<span class="pl-pds">"</span></span> <span class="pl-e">foo</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>&gt;
+      &lt;<span class="pl-ent"><span class="pl-c1">MyChild</span></span> /&gt;
+    &lt;/<span class="pl-ent"><span class="pl-c1">MyComponent</span></span>&gt;
+  );
+}
+
+<span class="pl-c"><span class="pl-c">//</span> good, when single line</span>
+<span class="pl-en">render</span>() {
+  <span class="pl-k">const</span> <span class="pl-smi">body</span><span class="pl-k"> =</span> &lt;<span class="pl-ent">div</span>&gt;hello&lt;/<span class="pl-ent">div</span>&gt;;
+<span class="pl-k">  return</span> &lt;<span class="pl-ent"><span class="pl-c1">MyComponent</span></span>&gt;<span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">body</span></span><span class="pl-pse">}</span>&lt;/<span class="pl-ent"><span class="pl-c1">MyComponent</span></span>&gt;;
+}</pre></div>
+</li>
+</ul>
+<h2>
+<a id="user-content-tags" class="anchor" href="#tags" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tags</h2>
+<ul>
+<li>
+<p>Always self-close tags that have no children. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md"><code>react/self-closing-comp</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">variant</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>stuff<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent"><span class="pl-c1">Foo</span></span>&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span> <span class="pl-e">variant</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>stuff<span class="pl-pds">"</span></span> /&gt;</pre></div>
+</li>
+<li>
+<p>If your component has multi-line properties, close its tag on a new line. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md"><code>react/jsx-closing-bracket-location</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+  <span class="pl-e">bar</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>
+  <span class="pl-e">baz</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>baz<span class="pl-pds">"</span></span> /&gt;
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+&lt;<span class="pl-ent"><span class="pl-c1">Foo</span></span>
+  <span class="pl-e">bar</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>
+  <span class="pl-e">baz</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>baz<span class="pl-pds">"</span></span>
+/&gt;</pre></div>
+</li>
+</ul>
+<h2>
+<a id="user-content-methods" class="anchor" href="#methods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Methods</h2>
+<ul>
+<li>
+<p>Use arrow functions to close over local variables.</p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-k">function</span> <span class="pl-en">ItemList</span>(<span class="pl-smi">props</span>) {
+<span class="pl-k">  return</span> (
+    &lt;<span class="pl-ent">ul</span>&gt;
+      <span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">props</span><span class="pl-k">.</span><span class="pl-smi">items</span><span class="pl-k">.</span><span class="pl-en">map</span>((<span class="pl-smi">item</span>,<span class="pl-smi"> index</span>) <span class="pl-k">=&gt;</span> (</span>
+<span class="pl-s1">        &lt;<span class="pl-ent"><span class="pl-c1">Item</span></span></span>
+<span class="pl-s1">          <span class="pl-e">key</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-smi">item</span><span class="pl-k">.</span><span class="pl-smi">key</span></span><span class="pl-pse">}</span></span>
+<span class="pl-s1">          <span class="pl-e">onClick</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1">() <span class="pl-k">=&gt;</span> <span class="pl-en">doSomethingWith</span>(<span class="pl-smi">item</span><span class="pl-k">.</span><span class="pl-smi">name</span>,<span class="pl-smi"> index</span>)</span><span class="pl-pse">}</span></span>
+<span class="pl-s1">        /&gt;</span>
+<span class="pl-s1">      ))</span><span class="pl-pse">}</span>
+    &lt;/<span class="pl-ent">ul</span>&gt;
+  );
+}</pre></div>
+</li>
+<li>
+<p>Attacher les écouteurs d'événement à l'aide de "fat arrow" en tant que méthode de la classe</p>
+<blockquote>
+<p>Pourquoi? L'appel à .bind(this) dans le render créer une novuelle fonction à chaque appel de render.</p>
+</blockquote>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-k">class</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+  <span class="pl-en">handleClick</span>() {
+<span class="pl-c">    <span class="pl-c">//</span> do stuff</span>
+  }
+
+  <span class="pl-en">render</span>() {
+<span class="pl-k">    return</span> &lt;<span class="pl-ent">div</span> <span class="pl-e">onClick</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">handleClick</span><span class="pl-k">.</span><span class="pl-en">bind</span>(<span class="pl-c1">this</span>)</span><span class="pl-pse">}</span> /&gt;;
+  }
+}
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">class</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+
+  <span class="pl-smi">handleClick</span><span class="pl-k"> =</span> () <span class="pl-k">=&gt;</span> {
+<span class="pl-c">    <span class="pl-c">//</span> do stuff</span>
+  }
+
+  <span class="pl-en">render</span>() {
+<span class="pl-k">    return</span> &lt;<span class="pl-ent">div</span> <span class="pl-e">onClick</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">handleClick</span></span><span class="pl-pse">}</span> /&gt;;
+  }
+}</pre></div>
+</li>
+</ul>
+<details>
+  <summary>Bind event handlers : Airbnb style</summary>
+  - Bind event handlers for the render method in the constructor. eslint: [`react/jsx-no-bind`](<a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md">https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md</a>)
+<pre><code>&gt; Why? A bind call in the render path creates a brand new function on every single render.
+
+```jsx
+// bad
+class extends React.Component {
+  onClickDiv() {
+    // do stuff
+  }
+
+  render() {
+    return &lt;div onClick={this.onClickDiv.bind(this)} /&gt;;
+  }
+}
+
+// good
+class extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.onClickDiv = this.onClickDiv.bind(this);
+  }
+
+  onClickDiv() {
+    // do stuff
+  }
+
+  render() {
+    return &lt;div onClick={this.onClickDiv} /&gt;;
+  }
+}
+```
+</code></pre>
+</details>
+<ul>
+<li>
+<p>Do not use underscore prefix for internal methods of a React component.</p>
+<blockquote>
+<p>Why? Underscore prefixes are sometimes used as a convention in other languages to denote privacy. But, unlike those languages, there is no native support for privacy in JavaScript, everything is public. Regardless of your intentions, adding underscore prefixes to your properties does not actually make them private, and any property (underscore-prefixed or not) should be treated as being public. See issues <a href="https://github.com/airbnb/javascript/issues/1024">#1024</a>, and <a href="https://github.com/airbnb/javascript/issues/490">#490</a> for a more in-depth discussion.</p>
+</blockquote>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-smi">React</span><span class="pl-k">.</span><span class="pl-en">createClass</span>({
+  <span class="pl-en">_onClickSubmit</span>() {
+<span class="pl-c">    <span class="pl-c">//</span> do stuff</span>
+  },
+
+<span class="pl-c">  <span class="pl-c">//</span> other stuff</span>
+});
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-k">class</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+  <span class="pl-en">onClickSubmit</span>() {
+<span class="pl-c">    <span class="pl-c">//</span> do stuff</span>
+  }
+
+<span class="pl-c">  <span class="pl-c">//</span> other stuff</span>
+}</pre></div>
+</li>
+<li>
+<p>Be sure to return a value in your <code>render</code> methods. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md"><code>react/require-render-return</code></a></p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-c"><span class="pl-c">//</span> bad</span>
+<span class="pl-en">render</span>() {
+  (&lt;<span class="pl-ent">div</span> /&gt;);
+}
+
+<span class="pl-c"><span class="pl-c">//</span> good</span>
+<span class="pl-en">render</span>() {
+<span class="pl-k">  return</span> (&lt;<span class="pl-ent">div</span> /&gt;);
+}</pre></div>
+</li>
+</ul>
+<h2>
+<a id="user-content-ordering" class="anchor" href="#ordering" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ordering</h2>
+<ul>
+<li>Ordering for <code>class extends React.Component</code>:</li>
+</ul>
+<ol>
+<li>optional <code>static</code> methods</li>
+<li><code>constructor</code></li>
+<li><code>getChildContext</code></li>
+<li><code>componentWillMount</code></li>
+<li><code>componentDidMount</code></li>
+<li><code>componentWillReceiveProps</code></li>
+<li><code>shouldComponentUpdate</code></li>
+<li><code>componentWillUpdate</code></li>
+<li><code>componentDidUpdate</code></li>
+<li><code>componentWillUnmount</code></li>
+<li>
+<em>clickHandlers or eventHandlers</em> like <code>onClickSubmit()</code> or <code>onChangeDescription()</code>
+</li>
+<li>
+<em>getter methods for <code>render</code></em> like <code>getSelectReason()</code> or <code>getFooterContent()</code>
+</li>
+<li>
+<em>optional render methods</em> like <code>renderNavigation()</code> or <code>renderProfilePicture()</code>
+</li>
+<li><code>render</code></li>
+</ol>
+<ul>
+<li>
+<p>How to define <code>propTypes</code>, <code>defaultProps</code>, <code>contextTypes</code>, etc...</p>
+<div class="highlight highlight-source-js-jsx"><pre><span class="pl-k">import</span><span class="pl-smi"> React</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>;
+<span class="pl-k">import</span><span class="pl-smi"> PropTypes</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>prop-types<span class="pl-pds">'</span></span>;
+
+<span class="pl-k">const</span> <span class="pl-smi">propTypes</span> <span class="pl-k">=</span> {
+<span class="pl-c1">  <span class="pl-s">id</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">number</span><span class="pl-k">.</span><span class="pl-smi">isRequired</span>,
+<span class="pl-c1">  <span class="pl-s">url</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">string</span><span class="pl-k">.</span><span class="pl-smi">isRequired</span>,
+<span class="pl-c1">  <span class="pl-s">text</span>:</span> <span class="pl-smi">PropTypes</span><span class="pl-k">.</span><span class="pl-smi">string</span>,
+};
+
+<span class="pl-k">const</span> <span class="pl-smi">defaultProps</span> <span class="pl-k">=</span> {
+<span class="pl-c1">  <span class="pl-s">text</span>:</span> <span class="pl-s"><span class="pl-pds">'</span>Hello World<span class="pl-pds">'</span></span>,
+};
+
+<span class="pl-k">class</span> <span class="pl-en">Link</span> <span class="pl-k">extends</span> <span class="pl-en">React</span><span class="pl-k">.</span><span class="pl-smi">Component</span> {
+  <span class="pl-k">static</span> <span class="pl-en">methodsAreOk</span>() {
+<span class="pl-k">    return</span><span class="pl-c1"> true</span>;
+  }
+
+  <span class="pl-en">render</span>() {
+<span class="pl-k">    return</span> &lt;<span class="pl-ent">a</span> <span class="pl-e">href</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">props</span><span class="pl-k">.</span><span class="pl-smi">url</span></span><span class="pl-pse">}</span> <span class="pl-e">data-id</span><span class="pl-k">=</span><span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">props</span><span class="pl-k">.</span><span class="pl-smi">id</span></span><span class="pl-pse">}</span>&gt;<span class="pl-pse">{</span><span class="pl-s1"><span class="pl-c1">this</span><span class="pl-k">.</span><span class="pl-smi">props</span><span class="pl-k">.</span><span class="pl-smi">text</span></span><span class="pl-pse">}</span>&lt;/<span class="pl-ent">a</span>&gt;;
+  }
+}
+
+<span class="pl-smi">Link</span><span class="pl-k">.</span><span class="pl-smi">propTypes</span><span class="pl-k"> =</span><span class="pl-smi"> propTypes</span>;
+<span class="pl-smi">Link</span><span class="pl-k">.</span><span class="pl-smi">defaultProps</span><span class="pl-k"> =</span><span class="pl-smi"> defaultProps</span>;
+
+<span class="pl-k">export default</span><span class="pl-smi"> Link</span>;</pre></div>
+</li>
+<li>
+<p>Ordering for <code>React.createClass</code>: eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md"><code>react/sort-comp</code></a></p>
+</li>
+</ul>
+<ol>
+<li><code>displayName</code></li>
+<li><code>propTypes</code></li>
+<li><code>contextTypes</code></li>
+<li><code>childContextTypes</code></li>
+<li><code>mixins</code></li>
+<li><code>statics</code></li>
+<li><code>defaultProps</code></li>
+<li><code>getDefaultProps</code></li>
+<li><code>getInitialState</code></li>
+<li><code>getChildContext</code></li>
+<li><code>componentWillMount</code></li>
+<li><code>componentDidMount</code></li>
+<li><code>componentWillReceiveProps</code></li>
+<li><code>shouldComponentUpdate</code></li>
+<li><code>componentWillUpdate</code></li>
+<li><code>componentDidUpdate</code></li>
+<li><code>componentWillUnmount</code></li>
+<li>
+<em>clickHandlers or eventHandlers</em> like <code>onClickSubmit()</code> or <code>onChangeDescription()</code>
+</li>
+<li>
+<em>getter methods for <code>render</code></em> like <code>getSelectReason()</code> or <code>getFooterContent()</code>
+</li>
+<li>
+<em>optional render methods</em> like <code>renderNavigation()</code> or <code>renderProfilePicture()</code>
+</li>
+<li><code>render</code></li>
+</ol>
+<h2>
+<a id="user-content-ismounted" class="anchor" href="#ismounted" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>isMounted</code>
+</h2>
+<ul>
+<li>Do not use <code>isMounted</code>. eslint: <a href="https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md"><code>react/no-is-mounted</code></a>
+</li>
+</ul>
+<blockquote>
+<p>Why? <a href="https://facebook.github.io/react/blog/2015/12/16/ismounted-antipattern.html" rel="nofollow"><code>isMounted</code> is an anti-pattern</a>, is not available when using ES6 classes, and is on its way to being officially deprecated.</p>
+</blockquote>
+<h2>
+<a id="user-content-translation" class="anchor" href="#translation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Translation</h2>
+<p>This JSX/React style guide is also available in other languages:</p>
+<ul>
+<li>
+<a href="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png" target="_blank" rel="nofollow"><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png" alt="cn" style="max-width:100%;"></a> <strong>Chinese (Simplified)</strong>: <a href="https://github.com/JasonBoy/javascript/tree/master/react">JasonBoy/javascript</a>
+</li>
+<li>
+<a href="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png" target="_blank" rel="nofollow"><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Taiwan.png" alt="tw" style="max-width:100%;"></a> <strong>Chinese (Traditional)</strong>: <a href="https://github.com/jigsawye/javascript/tree/master/react">jigsawye/javascript</a>
+</li>
+<li>
+<a href="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Spain.png" target="_blank" rel="nofollow"><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Spain.png" alt="es" style="max-width:100%;"></a> <strong>Español</strong>: <a href="https://github.com/agrcrobles/javascript/tree/master/react">agrcrobles/javascript</a>
+</li>
+<li>
+<a href="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png" target="_blank" rel="nofollow"><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png" alt="jp" style="max-width:100%;"></a> <strong>Japanese</strong>: <a href="https://github.com/mitsuruog/javascript-style-guide/tree/master/react">mitsuruog/javascript-style-guide</a>
+</li>
+<li>
+<a href="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/South-Korea.png" target="_blank" rel="nofollow"><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/South-Korea.png" alt="kr" style="max-width:100%;"></a> <strong>Korean</strong>: <a href="https://github.com/apple77y/javascript/tree/master/react">apple77y/javascript</a>
+</li>
+<li>
+<a href="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Poland.png" target="_blank" rel="nofollow"><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Poland.png" alt="pl" style="max-width:100%;"></a> <strong>Polish</strong>: <a href="https://github.com/pietraszekl/javascript/tree/master/react">pietraszekl/javascript</a>
+</li>
+<li>
+<a href="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png" target="_blank" rel="nofollow"><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png" alt="Br" style="max-width:100%;"></a> <strong>Portuguese</strong>: <a href="https://github.com/ronal2do/airbnb-react-styleguide">ronal2do/javascript</a>
+</li>
+<li>
+<a href="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Russia.png" target="_blank" rel="nofollow"><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Russia.png" alt="ru" style="max-width:100%;"></a> <strong>Russian</strong>: <a href="https://github.com/leonidlebedev/javascript-airbnb/tree/master/react">leonidlebedev/javascript-airbnb</a>
+</li>
+<li>
+<a href="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Thailand.png" target="_blank" rel="nofollow"><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Thailand.png" alt="th" style="max-width:100%;"></a> <strong>Thai</strong>: <a href="https://github.com/lvarayut/javascript-style-guide/tree/master/react">lvarayut/javascript-style-guide</a>
+</li>
+<li>
+<a href="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Ukraine.png" target="_blank" rel="nofollow"><img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Ukraine.png" alt="ua" style="max-width:100%;"></a> <strong>Ukrainian</strong>: <a href="https://github.com/ivanzusko/javascript/tree/master/react">ivanzusko/javascript</a>
+</li>
+</ul>
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
+</article></body></html>
